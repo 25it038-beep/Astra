@@ -1,0 +1,6 @@
+{
+  "name": "AI-Powered 24/7 Autonomous Cashierless Smart Store — IEEE Presentation",
+  "description": "Interactive 16:9 engineering presentation deck for an AI-Powered 24/7 Autonomous Cashierless Smart Store using Computer Vision, IoT Sensor Fusion, and Automated Payment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
