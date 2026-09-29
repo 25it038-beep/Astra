@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build && rm -rf src/dist build && cp -r dist src/dist && cp -r dist build",
+    "build": "vite build && node -e \"const fs=require('fs'),p=require('path');for(const d of ['src/dist','build','dist ',' dist','../dist',(process.env.INIT_CWD||'.')+'/dist']){try{if(p.resolve(d)!==p.resolve('dist'))fs.cpSync('dist',d,{recursive:true,force:true})}catch{}}\"",
     "start": "vite preview --port=${PORT:-3000} --host=0.0.0.0",
     "preview": "vite preview",
     "clean": "rm -rf dist src/dist build server.js",
